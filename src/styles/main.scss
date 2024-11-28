@@ -1,0 +1,16 @@
+//components
+@use './components/navbar';
+@use './components/sidebar';
+@use './components/navlinks';
+
+//base
+@use './base/base';
+@use './base/reset';
+
+
+//themes
+@use './themes/dark';
+@use './themes/light';
+
+//pages
+@use './pages/page'

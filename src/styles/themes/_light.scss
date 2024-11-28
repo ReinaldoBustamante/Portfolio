@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.light {
+    @include theme($secondary-color, $text, $accent, $primary-color, $aside-bg)
+}

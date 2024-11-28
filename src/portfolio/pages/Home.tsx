@@ -1,0 +1,47 @@
+export const Home = () => {
+  return (
+    <>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+  
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+      <p>holaaaa</p>
+    </>
+  )
+}

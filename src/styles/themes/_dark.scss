@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.dark {
+    @include theme($dark-secondary-color, $dark-text, $dark-accent, $dark-primary-color, $dark-aside-bg)
+}
