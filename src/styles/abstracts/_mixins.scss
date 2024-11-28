@@ -1,0 +1,31 @@
+@mixin theme($secondary-color, $text-color, $accent, $primary-color, $aside-bg) {
+    height: 100svh;
+    overflow-y: auto;
+    background-color: $secondary-color;
+    color: $text-color;
+    transition: background-color 0.5s, color 0.5s;
+    header{
+        transition: background-color 0.5s;
+        background-color: $secondary-color;
+    }
+    .dark-mode-toggle-wrapper .circle {
+        background-color: $primary-color;
+        transition: background-color 0.5s;
+    }
+
+    .side-left,
+    .side-right {
+        background-color: $aside-bg;
+    }
+
+    .icon {
+        color: $primary-color;
+    }
+
+    .nav-links {
+        .link {
+            color: $accent;
+            border-bottom: 3px solid $accent;
+        }
+    }
+}

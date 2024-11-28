@@ -1,0 +1,45 @@
+@use '../abstracts/animations';
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+    
+    .menu-logo-container {
+        display: flex;
+        .logo {
+            display: none;
+        }
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .dark-mode-toggle-wrapper {
+        display: flex;
+        width: 44px;
+        height: 20px;
+        border: none;
+        border-radius: 12px;
+        background-color: white;
+        position: relative;
+
+        .circle {
+            position: absolute;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .toggle-dark {
+            animation: toggle-slide-right 1s forwards;
+        }
+        .toggle-light {
+            animation: toggle-slide-left 1s forwards;
+        }
+    }
+}

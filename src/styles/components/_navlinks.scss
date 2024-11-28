@@ -1,0 +1,12 @@
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    .link{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        padding: 12px 0px;
+    }
+}
