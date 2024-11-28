@@ -1,0 +1,43 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main  # Puedes cambiar esta rama si usas una diferente para producción
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Check out the repository
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    # 2. Set up Node.js (si tu proyecto es Node.js, ajusta según tu stack)
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    # 3. Instalar dependencias
+    - name: Install dependencies
+      run: npm install  
+
+    # 4. Build del proyecto (si es necesario, por ejemplo en un proyecto React)
+    - name: Build project
+      run: npm run build  
+
+    # 5. Configurar AWS CLI
+    - name: Set up AWS CLI
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: sa-east-1
+
+    # 6. Sincronizar los archivos con S3
+    - name: Sync files to S3
+      run: |
+        aws s3 sync ./dist s3://reinaldobustamante.dev
+    
