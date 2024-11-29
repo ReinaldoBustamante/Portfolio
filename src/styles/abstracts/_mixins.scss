@@ -39,4 +39,11 @@
             border-top: 5px solid $primary-color;
         }
     }
+
+    .btn-primary {
+        background-color: $primary-color;
+        color: $secondary-color;
+        transition: background-color 0.5s, color 0.5s;
+        cursor: pointer;
+    }
 }
