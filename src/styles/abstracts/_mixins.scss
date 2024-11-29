@@ -1,5 +1,5 @@
 @mixin theme($secondary-color, $text-color, $accent, $primary-color, $aside-bg) {
-    height: 100svh;
+    height: 100lvh;
     overflow-y: auto;
     background-color: $secondary-color;
     color: $text-color;
@@ -26,6 +26,17 @@
         .link {
             color: $accent;
             border-bottom: 3px solid $accent;
+        }
+    }
+
+    .loading {
+        color: $primary-color;
+
+        .bounce {
+            background-color: $primary-color;
+        }
+        .circle {
+            border-top: 5px solid $primary-color;
         }
     }
 }

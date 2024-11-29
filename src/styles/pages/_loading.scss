@@ -1,0 +1,50 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 100svh;
+
+    .circle {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        animation: spin 1.5s infinite
+    }
+
+    .bounce {
+        width: 12px;
+        height: 12px;
+        animation: bounce 1.5s infinite;
+        border-radius: 50%;
+
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes bounce {
+
+        0%,
+        100% {
+            transform: translateY(0) scaleY(0.6);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+            /* Sombra más intensa cuando está abajo */
+        }
+
+        50% {
+            transform: translateY(-32px) scaleY(1);
+            box-shadow: 0 12px 18px rgba(0, 0, 0, 0);
+            /* Sombra más intensa cuando está abajo */
+        }
+    }
+}
