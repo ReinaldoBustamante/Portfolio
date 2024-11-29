@@ -46,4 +46,10 @@
         transition: background-color 0.5s, color 0.5s;
         cursor: pointer;
     }
+
+    .marker {
+        color: $primary-color;
+        transition: color 0.5s;
+        font-weight: bold;
+    }
 }
