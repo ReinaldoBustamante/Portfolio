@@ -5,9 +5,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    
+    width: 100%;
+
     .menu-logo-container {
         display: flex;
+
         .logo {
             display: none;
         }
@@ -37,8 +39,31 @@
         .toggle-dark {
             animation: toggle-slide-right 1s forwards;
         }
+
         .toggle-light {
             animation: toggle-slide-left 1s forwards;
         }
+    }
+
+    @media (min-width:768px) {
+        max-width: 1024px;
+        display: flex;
+        justify-content: end;
+        .icon {
+            display: none;            
+        }
+        .navigation-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .nav-links {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+
+           
+        }
+
     }
 }

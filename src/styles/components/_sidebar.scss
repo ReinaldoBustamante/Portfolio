@@ -16,7 +16,12 @@
         .icon {
             align-self: end;
         }
-
+        .nav-links {
+            .link {
+      
+                border-bottom: 3px solid white;
+            }
+        }
         &.hidden {
             display: none;
         }

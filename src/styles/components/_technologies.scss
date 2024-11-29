@@ -1,0 +1,10 @@
+.tech{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    p{
+        padding: 4px 10px;
+        border-radius: 4px;
+        color: white;
+    }
+}

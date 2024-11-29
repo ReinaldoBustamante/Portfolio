@@ -3,6 +3,7 @@
 @use './components/sidebar';
 @use './components/navlinks';
 @use './components/button';
+@use './components/technologies';
 //base
 @use './base/base';
 @use './base/reset';
@@ -17,3 +18,4 @@
 @use './pages/loading';
 @use './pages/home';
 @use './pages/career';
+@use './pages/projects';

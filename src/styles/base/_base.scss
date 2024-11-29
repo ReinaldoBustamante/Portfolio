@@ -8,6 +8,12 @@ ul {
 }
 header {
     position: sticky;
+    display: flex;
+    justify-content: center;
     z-index: 5;
     top: 0;
+    width: 100%;
+}
+img{
+    width: 100%;
 }
