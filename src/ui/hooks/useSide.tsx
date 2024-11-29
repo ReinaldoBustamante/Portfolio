@@ -1,17 +1,17 @@
 import { useState } from 'react'
 
 export const useSide = () => {
-    const [showSide, setShowSide] = useState<boolean | null>(null)
+    const [sideIsOpen, setSideIsOpen] = useState<boolean | null>(null)
 
     const openSide = () => {
-        setShowSide(true)
+        setSideIsOpen(true)
       }
       const closeSide = () => {
-        setShowSide(false)
+        setSideIsOpen(false)
     }
     
     return {
-        showSide,
+        sideIsOpen,
         openSide,
         closeSide
     }

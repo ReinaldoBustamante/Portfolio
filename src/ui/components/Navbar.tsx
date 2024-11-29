@@ -1,6 +1,13 @@
 import { IoMenu } from "react-icons/io5"
+import { NavLinks } from "./NavLinks";
 
-export const Navbar = ({ darkMode, toggleMode, openSide }: any) => {
+interface NavbarProps {
+  darkMode: boolean | null;
+  toggleMode: () => void;
+  openSide: () => void;
+}
+
+export const Navbar = ({ darkMode, toggleMode, openSide }: NavbarProps) => {
 
   return (
     <div className="navbar-wrapper">
@@ -9,11 +16,7 @@ export const Navbar = ({ darkMode, toggleMode, openSide }: any) => {
         <div className="logo">ReinaldoBustamante</div>
       </div>
       <nav className="navigation-wrapper">
-        <ul className="nav-links">
-          <li>Inicio</li>
-          <li>Experiencia</li>
-          <li>Proyectos personales</li>
-        </ul>
+        <NavLinks />
         <button
           className="dark-mode-toggle-wrapper"
           onClick={toggleMode}
