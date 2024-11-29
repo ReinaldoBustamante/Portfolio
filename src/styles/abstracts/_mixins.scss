@@ -52,4 +52,24 @@
         transition: color 0.5s;
         font-weight: bold;
     }
+
+    .time-line {
+        background-color: $primary-color;
+        transition: background-color 0.5s;
+    }
+
+    .work .work-item .indicator {
+        background-color: $primary-color;
+        transition: background-color 0.5s;
+    }
+
+    .tech p {
+        background-color: $primary-color;
+        transition: background-color 0.5s;
+    }
+    .experience .work .work-item .description{
+        .date {
+            color: rgb(127, 127, 127)
+        }
+    }
 }
