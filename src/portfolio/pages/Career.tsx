@@ -19,11 +19,11 @@ export const Career = () => {
         },
         {
           id: 2,
-          name: 'Javascript.js'
+          name: 'Javascript'
         },
         {
           id: 2,
-          name: 'Typescript.js'
+          name: 'Typescript'
         },
         {
           id: 3,
@@ -53,7 +53,7 @@ export const Career = () => {
         },
         {
           id: 2,
-          name: 'Typescript.js'
+          name: 'Typescript'
         },
       ]
     },
@@ -78,7 +78,7 @@ export const Career = () => {
           name: 'Next.js'
         }
       ]
-    }
+    },
   ]
 
   return (
