@@ -28,4 +28,15 @@
             border-bottom: 3px solid $accent;
         }
     }
+
+    .loading {
+        color: $primary-color;
+
+        .bounce {
+            background-color: $primary-color;
+        }
+        .circle {
+            border-top: 5px solid $primary-color;
+        }
+    }
 }
