@@ -1,3 +1,6 @@
+@use '../abstracts/animations';
+
 .pages {
     padding: 10px 20px;
+    animation: fade-in 1s forwards;
 }

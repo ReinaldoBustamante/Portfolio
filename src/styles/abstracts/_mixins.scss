@@ -39,4 +39,37 @@
             border-top: 5px solid $primary-color;
         }
     }
+
+    .btn-primary {
+        background-color: $primary-color;
+        color: $secondary-color;
+        transition: background-color 0.5s, color 0.5s;
+        cursor: pointer;
+    }
+
+    .marker {
+        color: $primary-color;
+        transition: color 0.5s;
+        font-weight: bold;
+    }
+
+    .time-line {
+        background-color: $primary-color;
+        transition: background-color 0.5s;
+    }
+
+    .work .work-item .indicator {
+        background-color: $primary-color;
+        transition: background-color 0.5s;
+    }
+
+    .tech p {
+        background-color: $primary-color;
+        transition: background-color 0.5s;
+    }
+    .experience .work .work-item .description{
+        .date {
+            color: rgb(127, 127, 127)
+        }
+    }
 }

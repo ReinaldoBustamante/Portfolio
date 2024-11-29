@@ -2,7 +2,7 @@
 @use './components/navbar';
 @use './components/sidebar';
 @use './components/navlinks';
-
+@use './components/button';
 //base
 @use './base/base';
 @use './base/reset';
@@ -15,3 +15,5 @@
 //pages
 @use './pages/page';
 @use './pages/loading';
+@use './pages/home';
+@use './pages/career';
