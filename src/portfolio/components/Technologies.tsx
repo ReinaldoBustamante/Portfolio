@@ -1,4 +1,4 @@
-import { Experience, Technology } from "../../types/types"
+import { Technology } from "../../types/types"
 
 export const Technologies = ({ techs }: { techs: Technology[] }) => {
     return (
