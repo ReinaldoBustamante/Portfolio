@@ -1,0 +1,30 @@
+.page-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        .project-item{
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 12px;
+            img{
+                border-radius: 8px;
+            }
+            .buttons {
+                display: flex;
+                width: 100%;
+                button {
+                    width: 100%;
+                    padding: 4px;
+                    flex: 1;
+                }
+               
+            }
+        }
+    }
+}

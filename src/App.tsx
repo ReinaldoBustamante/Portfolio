@@ -8,12 +8,12 @@ import { Loading } from "./portfolio/pages/Loading";
 
 export const App = () => {
   const { darkMode, toggleMode } = useTheme();
-  const { showSide, openSide, closeSide } = useSide()
-  const [showContent, setShowContent] = useState(false);
+  const { sideIsOpen, openSide, closeSide } = useSide()
+  const [showPage, setShowPage] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowContent(true);
+      setShowPage(true);
     }, 3000);
 
     return () => clearTimeout(timer);
@@ -22,13 +22,13 @@ export const App = () => {
   return (
     <div className={darkMode ? 'dark' : 'light'}>
       {
-        showContent ? (
+        showPage ? (
           <>
             <header>
               <Navbar darkMode={darkMode} toggleMode={toggleMode} openSide={openSide} />
             </header>
             <nav>
-              <Sidebar showSide={showSide} closeSide={closeSide} />
+              <Sidebar sideIsOpen={sideIsOpen} closeSide={closeSide} />
             </nav>
             <main className="pages">
               <PortfolioRoutes />
