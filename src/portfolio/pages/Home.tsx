@@ -1,6 +1,8 @@
 import { IoArrowForwardSharp, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
+  const navigate = useNavigate()
   return (
     <div className="page-home">
       <h1 className="title">
@@ -14,7 +16,7 @@ export const Home = () => {
       <p>
       Siempre estoy abierto a aprender nuevas tecnologías para ofrecer soluciones innovadoras, escalables y de alto rendimiento con interfaces atractivas.
       </p>
-      <button className="projects">
+      <button className="projects" onClick={() => navigate('/projects')}>
         <p>Conoce mis proyectos </p>
         <IoArrowForwardSharp className="icon"/>
       </button>
