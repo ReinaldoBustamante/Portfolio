@@ -1,4 +1,6 @@
+import { IoLink, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5"
 import { Technologies } from "../components/Technologies"
+import { LuExternalLink } from "react-icons/lu"
 
 export const Projects = () => {
   return (
@@ -7,26 +9,35 @@ export const Projects = () => {
       <div className="project-list">
 
         <div className="project-item">
-          <img src="https://portfolio-images-reinaldo.s3.sa-east-1.amazonaws.com/project-portfolio.png" alt="" />
-          <h2 className="project-title">Portafolio personal</h2>
-          <p>Portafolio personal, diseñado para destacar mis habilidades como desarrollador full stack, mi experiencia y los proyectos personales en los que he trabajado.</p>
-          <Technologies techs={[{ id: 1, name: 'React.js' }, { id: 2, name: 'Typescript' }, { id: 3, name: 'Sass' }]} />
-          <div className="buttons">
-            <button>Demo</button>
-            <button>Source</button>
+          <img src="https://portfolio-images-reinaldo.s3.sa-east-1.amazonaws.com/Sin+t%C3%ADtulo.png" alt="" />
+          <div className="content">
+            <div className="text">
+              <h2>Portafolio personal</h2>
+              <p className="content-text">Una muestra de mis habilidades en desarrollo web, incluyendo tecnologías modernas y diseño responsivo.</p>
+              <p className="content-text">technologias</p>
+              <div className="interactive">
+                <a href="https://github.com/ReinaldoBustamante/portfolio-v1" target="_blank" className="icon" aria-label="Ver perfil de GitHub"><IoLogoGithub /></a>
+                <a href="https://reinaldobustamante.vercel.app/" target="_blank" className="icon" aria-label="Ver perfil de LinkedIn"><LuExternalLink /></a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div className="project-item">
-          <img src="https://portfolio-images-reinaldo.s3.sa-east-1.amazonaws.com/project-portfolio.png" alt="" />
-          <h2 className="project-title">Portafolio personal</h2>
-          <p>Portafolio personal, diseñado para destacar mis habilidades como desarrollador full stack, mi experiencia y los proyectos personales en los que he trabajado.</p>
-          <Technologies techs={[{ id: 1, name: 'React.js' }, { id: 2, name: 'Typescript' }, { id: 3, name: 'Sass' }]} />
-          <div className="buttons">
-            <button>Demo</button>
-            <button>Source</button>
+          <img src="https://portfolio-images-reinaldo.s3.sa-east-1.amazonaws.com/Sin+t%C3%ADtulo.png" alt="" />
+          <div className="content">
+            <div className="text">
+              <h2>Portafolio personal</h2>
+              <p className="content-text">Primera version de mi portafolio personal</p>
+              <p className="content-text">technologias</p>
+              <div className="interactive">
+                <a href="https://github.com/ReinaldoBustamante/portfolio-v1" target="_blank" className="icon" aria-label="Ver perfil de GitHub"><IoLogoGithub /></a>
+                <a href="https://reinaldobustamante.vercel.app/" target="_blank" className="icon" aria-label="Ver perfil de LinkedIn"><IoLink /></a>
+              </div>
+            </div>
           </div>
         </div>
+
 
       </div>
     </div>

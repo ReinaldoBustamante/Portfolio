@@ -99,4 +99,8 @@
         color: $primary-color;
         transition: color 0.5s;
     }
+
+    .content .text {
+        background-color: rgba($primary-color, 0.6);
+    }
 }
