@@ -1,5 +1,4 @@
-import { IoLink, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5"
-import { Technologies } from "../components/Technologies"
+import { IoLink, IoLogoGithub} from "react-icons/io5"
 import { LuExternalLink } from "react-icons/lu"
 
 export const Projects = () => {
