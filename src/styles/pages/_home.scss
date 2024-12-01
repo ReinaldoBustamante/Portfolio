@@ -1,7 +1,32 @@
 .page-home {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 32px;
+    .title {
+        font-size: 52px;
+    }
+    .sub-title {
+        margin-top: 4px;
+        font-size: 28px;
+    }
+    .projects {
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: none;
+        gap: 16px;
+        .icon {
+            animation: right-move 1s infinite alternate;
+        }
+        @keyframes right-move {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(24px)
+            }
+        }
+    }
 
     section {
         display: flex;
