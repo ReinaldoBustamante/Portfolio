@@ -11,6 +11,9 @@ export const Home = () => {
       <p>
         Mi enfoque esta en crear soluciones web completas y centradas en el usuario utilizando tecnologías como <span className="marker">Node.js</span>, <span className="marker">React.js</span> y <span className="marker">Express</span>.
       </p>
+      <p>
+      Siempre estoy abierto a aprender nuevas tecnologías para ofrecer soluciones innovadoras, escalables y de alto rendimiento con interfaces atractivas.
+      </p>
       <button className="projects">
         <p>Conoce mis proyectos </p>
         <IoArrowForwardSharp className="icon"/>
