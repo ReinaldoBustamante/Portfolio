@@ -1,6 +1,8 @@
+@use '../abstracts/animations';
 .page-home {
     display: flex;
     flex-direction: column;
+    animation: fade-in 1s forwards;
     gap: 32px;
     .title {
         font-size: 52px;

@@ -1,7 +1,10 @@
+@use '../abstracts/animations';
+
 .page-projects {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    animation: fade-in 1s forwards;
     .project-list {
         display: flex;
         flex-direction: column;
