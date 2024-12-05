@@ -67,7 +67,11 @@
         transition: color 0.5s;
         font-weight: bold;
     }
-
+    .page-home .projects {
+        background-color: $secondary-color;
+        color: $text-color;
+        transition: background-color 0.5s, color 0.5s;
+    }
     .time-line {
         background-color: $primary-color;
         transition: background-color 0.5s;
@@ -94,5 +98,9 @@
     .project-title{
         color: $primary-color;
         transition: color 0.5s;
+    }
+
+    .content .text {
+        background-color: rgba($primary-color, 0.6);
     }
 }
