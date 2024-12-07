@@ -16,15 +16,15 @@ export const laboralExperience = [
                 name: 'Next.js'
             },
             {
-                id: 2,
+                id: 3,
                 name: 'Javascript'
             },
             {
-                id: 2,
+                id: 4,
                 name: 'Typescript'
             },
             {
-                id: 3,
+                id: 5,
                 name: 'Strapi'
             }
         ]
@@ -50,13 +50,13 @@ export const laboralExperience = [
                 name: 'Postgresql'
             },
             {
-                id: 2,
+                id: 4,
                 name: 'Typescript'
             },
         ]
     },
     {
-        id: 2,
+        id: 3,
         company: 'Universidad Austral de Chile',
         ocupation: 'Practicante QA',
         init: 'ene. 2023',
