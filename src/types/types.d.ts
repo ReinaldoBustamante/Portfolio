@@ -5,10 +5,20 @@ export interface Technology {
 
 export interface Experience {
     id: number;
-    company: string;
-    ocupation: string;
-    init: string;
-    end: string;
+    company_name: string;
+    occupation: string;
+    init_date: Date;
+    end_date: Date;
     description: string;
-    techs: Technology[]
+    technologies: Technology[]
+}
+
+export interface Project {
+    id: number;
+    title: string;
+    description: string;
+    repository_url: string;
+    img_url: string;
+    demo_url: string;
+    technologies: Technology[]
 }
