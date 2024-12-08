@@ -12,26 +12,32 @@ export const Projects = () => {
       <div className="project-list">
         {
           data.map(project => {
-            const {title, description, demo_url, img_url, repository_url, technologies} = project
+            const { id, title, description, demo_url, img_url, repository_url, technologies } = project
+            const paragraphs = description.split('\n')
+
             return (
-              <div className="project-item">
-                <img src={img_url} alt="" />
-                <div className="content">
-                  <div className="text">
-                    <h2>{title}</h2>
-                    <p className="content-text">{description}</p>
-                    <Technologies techs={technologies} />
-                    <div className="interactive">
-                      <a href={repository_url} target="_blank" className="icon" aria-label="Ver perfil de GitHub"><IoLogoGithub /></a>
-                      <a href={demo_url} target="_blank" className="icon" aria-label="ver demo"><LuExternalLink /></a>
+              <div className="project-item" key={id}>
+                <div className="content-wrapper">
+                  <img src={img_url} alt="" />
+                  <div className="content">
+                    <div className="text">
+                      <h2>{title}</h2>
+                      {paragraphs.map(paragraph => <p className="content-text" key={paragraph}>{paragraph}</p>)}
+
+                      <Technologies techs={technologies} />
+                      <div className="interactive">
+                        <a href={repository_url} target="_blank" className="icon" aria-label="Ver perfil de GitHub"><IoLogoGithub /></a>
+                        <a href={demo_url} target="_blank" className="icon" aria-label="ver demo"><LuExternalLink /></a>
+                      </div>
                     </div>
                   </div>
                 </div>
+
               </div>
             )
           })
         }
-       
+
 
 
       </div>
