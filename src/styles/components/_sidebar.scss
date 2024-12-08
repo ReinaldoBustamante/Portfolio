@@ -15,12 +15,17 @@
 
         .icon {
             align-self: end;
+            font-size: 36px;
         }
-        .nav-links {
-            .link {
-      
-                border-bottom: 3px solid white;
+        .side-content{
+            .nav-links {
+                display: flex;
+                gap: 32px;
+                margin-top: 24px;
+                font-size: 24px;
+                font-weight: bold;
             }
+
         }
         &.hidden {
             display: none;

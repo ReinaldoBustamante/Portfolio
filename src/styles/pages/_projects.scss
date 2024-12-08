@@ -5,59 +5,90 @@
     flex-direction: column;
     gap: 20px;
     animation: fade-in 1s forwards;
+    width: 100%;
+
     .project-list {
         display: flex;
         flex-direction: column;
         gap: 28px;
-        .project-item{
-            border-radius: 4px;
+
+        .project-item {
             display: flex;
             position: relative;
             flex-direction: column;
             border-radius: 8px;
-            background: linear-gradient(to top, black, white);
-            img{
+
+            .content-wrapper {
                 border-radius: 8px;
-                height: 400px;
-                object-fit: cover;
-                opacity: 0.4;
+                img {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 8px;
+                    object-fit: cover;
+                    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+                    opacity: 0.05;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                    opacity: 0.1;
+                }
+                
+
             }
+
             .content {
-                position: absolute;
                 width: 100%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
-                gap: 12px;
-                justify-content: end;
-                padding: 32px 16px;
-                
-                .text {
-                    gap: 12px;
+                padding: 16px 30px;
+                .text{
                     display: flex;
                     flex-direction: column;
-                  
-                    border-radius: 12px;
-                    padding: 12px;
-                    h2 {
-                        color: white;
-                    }
-                    .interactive {
-                        display: flex;
-                        gap: 8px;
-                        .icon {
-                            color: white;
-                            font-size: 24px;
-                        }
-                    }
+                    gap: 24px;
                 }
-                .content-text {
-                    color: white;
-                    font-size: 16px;
-                    
+                .interactive {
+                    display: flex;
+                    gap: 8px;
                 }
             }
-         
+        }
+
+        @media (min-width: 768px) {
+            .project-item {
+                .content-wrapper{
+                    img {
+                        width: 50%;
+                        position: relative;
+                        opacity: 1;
+                    }
+                    .content{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 60%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        .text {
+                            padding: 16px 30px;
+                            border-radius: 8px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 12px;
+                        }
+                    }
+                    
+                }
+
+            }
         }
     }
+
 }

@@ -7,4 +7,10 @@
         border-radius: 4px;
         color: white;
     }
+    @media (min-width: 768px) {
+        gap: 16px;
+        p {
+            padding: 4px 0px;
+        }
+    }
 }
