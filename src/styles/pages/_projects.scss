@@ -55,7 +55,9 @@
                 }
                 .interactive {
                     display: flex;
-                    gap: 8px;
+                    position: relative;
+                    z-index: 99;
+                    gap: 12px;
                 }
             }
         }
